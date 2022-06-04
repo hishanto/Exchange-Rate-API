@@ -6,10 +6,11 @@ const rateEl = document.getElementById('rate');
 const swap = document.getElementById('swap');
 
 function calculate() {
-    fetch("item.json")
-    .then(response => response.json())
-    .then(data => response.json())
-
+    console.log("run");
 }
-
+//Event Listeners
+currencyEl_one.addEventListener('change', calculate);
+currencyEl_two.addEventListener('change', calculate);
+amountEl_one.addEventListener('input', calculate);
+amountEl_two.addEventListener('input', calculate);
 calculate();
